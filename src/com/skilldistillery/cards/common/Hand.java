@@ -24,7 +24,6 @@ public abstract class Hand {
 	}
 
 	public List<Card> getCards() {
-		System.out.println("Showing the hand: " + getHand());
 		return getHand();
 	}
 
@@ -33,18 +32,13 @@ public abstract class Hand {
 		StringBuilder handString = new StringBuilder();
 		for (Card card : getHand()) {
 			handString.append(card.toString());
-			System.out.print("The cards in the hand are: ");
-			System.out.println(handString.toString());
+//			System.out.println(handString.toString());
 		}
 		return handString.toString();
 	}
 
 	public List<Card> getHand() {
 		return hand;
-	}
-
-	public void setHand(List<Card> hand) {
-		this.hand = hand;
 	}
 
 }

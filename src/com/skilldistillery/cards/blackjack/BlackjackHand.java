@@ -13,35 +13,45 @@ public class BlackjackHand extends Hand {
 
 	@Override
 	public int getHandValue() {
+		handValue = 0;
 		// add up the cards in the hand
 		for (Card card : getHand()) {
 			handValue += card.getValue();
 		}
-		return super.getHandValue();
+		return handValue;
 	}
 
 	@Override
 	public void addCard(Card card) {
-		// TODO Auto-generated method stub
 		super.addCard(card);
 	}
 
 	@Override
 	public void clearHand() {
-		// TODO Auto-generated method stub
 		super.clearHand();
 	}
 
 	@Override
 	public List<Card> getCards() {
-		// TODO Auto-generated method stub
 		return super.getCards();
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return super.toString();
+	}
+
+	public void showOneCard() {
+		String showCard = getCards().get(1).toString();
+		System.out.println(showCard);
+	}
+
+	public void showAllCards() {
+		int length = getHand().size();
+		for (int index = 0; index < length; index++) {
+			String showCard = getCards().get(index).toString();
+			System.out.print(showCard);
+		}
 	}
 
 	public void setHandValue(int handValue) {

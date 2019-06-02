@@ -7,7 +7,7 @@ public class BlackjackDriver {
 
 	public static void main(String[] args) {
 		BlackjackApp blackjack = new BlackjackApp();
-		blackjack.launch();
+		blackjack.run();
 	}
 
 	public BlackjackDriver() {

@@ -12,7 +12,12 @@ public class Card {
 
 	public String toString() {
 		StringBuilder card = new StringBuilder();
-		card.append(rank);
+		card.append("\n\t");
+		if ((rank == Rank.JACK) || (rank == Rank.QUEEN) || (rank == Rank.KING) || (rank == Rank.ACE)) {
+			card.append(rank);
+		} else {
+			card.append(rank.getValue());
+		}
 		card.append(" of ");
 		card.append(suit);
 		return card.toString();

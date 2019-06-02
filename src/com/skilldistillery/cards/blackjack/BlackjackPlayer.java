@@ -1,29 +1,33 @@
 package com.skilldistillery.cards.blackjack;
 
+import com.skilldistillery.cards.common.Card;
+
 public class BlackjackPlayer implements PlayBlackjack {
+
+	BlackjackHand playerHand = new BlackjackHand();
+	Card card;
 
 	public BlackjackPlayer() {
 	}
 
-	@Override
-	public void startAHand() {
-		// TODO Auto-generated method stub
-		
+	public BlackjackHand getPlayerHand() {
+		return playerHand;
 	}
 
-	@Override
-	public void checkTheHand() {
-		// TODO Auto-generated method stub
-		
+	public void setPlayerHand(BlackjackHand playerHand) {
+		this.playerHand = playerHand;
 	}
 
-	@Override
-	public void decisionTime() {
-		// TODO Auto-generated method stub
-		
+	public void checkTheHand(BlackjackHand playerhand) {
+
 	}
 
-	
+	public void hitMe(BlackjackHand playerhand) {
 
-//	show all cards
+	}
+
+	public void startAHand(BlackjackHand playerhand) {
+
+	}
+
 }
